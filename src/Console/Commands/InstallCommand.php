@@ -4,21 +4,21 @@ namespace Kindling\Core\Console\Commands;
 
 use Illuminate\Console\Command;
 
-class TestCommand extends Command
+class InstallCommand extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'kindling:name';
+    protected $signature = 'kindling:install';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Command to install Kindling';
 
     /**
      * Create a new command instance.

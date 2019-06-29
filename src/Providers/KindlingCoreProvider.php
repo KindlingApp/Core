@@ -3,7 +3,7 @@
 namespace Kindling\Core\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Kindling\Core\Console\Commands\TestCommand;
+use Kindling\Core\Console\Commands\InstallCommand;
 
 class KindlingCoreProvider extends ServiceProvider
 {
@@ -18,6 +18,8 @@ class KindlingCoreProvider extends ServiceProvider
         $this->mergeConfigFrom(
             __DIR__.'/../config/kindling.php', 'kindling'
         );
+
+        $this->registerDevDependencies();
     }
 
     /**
@@ -31,7 +33,7 @@ class KindlingCoreProvider extends ServiceProvider
 
         if ($this->app->runningInConsole()) {
             $this->commands([
-                TestCommand::class,
+                InstallCommand::class,
             ]);
         }
     }
@@ -51,5 +53,21 @@ class KindlingCoreProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../resources/views' => resource_path('views/vendor/kindling'),
         ]);
+    }
+
+    private function registerDevDependencies()
+    {
+        if (env('APP_DEBUG')) {
+            // foreach (config('kindling.dev.providers') as $provider) {
+            //     $this->app->register(
+            //         $provider
+            //     );
+            // }
+            
+            // $loader = \Illuminate\Foundation\AliasLoader::getInstance();
+            // foreach (config('kindling.dev.aliases') as $key => $alias) {
+            //     $loader->alias($key, $alias);
+            // }
+        }
     }
 }

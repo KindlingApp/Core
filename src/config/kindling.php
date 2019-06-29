@@ -1,5 +1,12 @@
 <?php
 
 return [
-    'test' => 'this works'
+    // 'dev' => [
+    //     'providers' => [
+    //         \Barryvdh\Debugbar\ServiceProvider::class,
+    //     ],
+    //     'aliases' => [
+    //         'Debugbar' => \Barryvdh\Debugbar\Facade::class,
+    //     ],
+    // ],
 ];

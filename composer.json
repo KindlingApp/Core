@@ -8,7 +8,8 @@
             "email": "andrewhuggins@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+    },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.2"
     },
