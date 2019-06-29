@@ -1,0 +1,24 @@
+{
+    "name": "kindling/core",
+    "description": "Kindling App Core",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrew huggins",
+            "email": "andrewhuggins@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Kindling\\Core\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kindling\\Core\\Providers\\KindlingCoreProvider"
+            ]
+        }
+    }
+}
