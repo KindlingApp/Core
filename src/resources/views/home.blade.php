@@ -3,7 +3,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Tailwind Starter Template - Landing Page Template: Tailwind Toolbox</title>
+	<title>Kindling</title>
 	<meta name="description" content="Free open source Tailwind CSS starter template (Hero Product) to use with node.js/npm, postcss+purgecss!">
 	<meta name="keywords" content="tailwind,tailwindcss,tailwind css,css,starter template,free template,hero, product">
 	
@@ -17,7 +17,7 @@
 	<meta name="theme-color" content="#3b7977">
 
 	<!-- Primary Meta Tags -->
-	<title>Tailwind Toolbox - Free Starter Templates and Components for Tailwind CSS</title>
+	<title>Kindling</title>
 	<meta name="title" content="Tailwind Toolbox - Free Starter Templates and Components for Tailwind CSS">
 	<meta name="description" content="Free open source Tailwind CSS starter Templates and Components to get you started quickly to creating websites in Tailwind CSS!">
 
@@ -48,7 +48,7 @@
 	<!-- Define your gradient here - use online tools to find a gradient matching your branding-->
 	<style>
 		.gradient {
-			background: linear-gradient(90deg, #d53369 0%, #daae51 100%);"
+			background: linear-gradient(90deg, #ED8936 0%, #FBD38D 100%);"
 		}
 	</style>
 
@@ -65,10 +65,11 @@
 		<div class="pl-4 flex items-center">
 			<a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#"> 
 				<!--Icon from: http://www.potlabicons.com/ -->
-				<svg class="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005">
-				<rect fill="#2a2a31" x="16.539" y="425.626" width="479.767" height="50.502" transform="matrix(1,0,0,1,0,0)"></rect>
-				<path class="plane-take-off" d=" M 510.7 189.151 C 505.271 168.95 484.565 156.956 464.365 162.385 L 330.156 198.367 L 155.924 35.878 L 107.19 49.008 L 211.729 230.183 L 86.232 263.767 L 36.614 224.754 L 0 234.603 L 45.957 314.27 L 65.274 347.727 L 105.802 336.869 L 240.011 300.886 L 349.726 271.469 L 483.935 235.486 C 504.134 230.057 516.129 209.352 510.7 189.151 Z "></path>
-				</svg> LANDING
+				<img src="https://cdn3.iconfinder.com/data/icons/camping-icons/476/Camp_Fire-512.png" width="20px" class="inline -mt-2" />
+				{{-- <svg class="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005"> --}}
+				{{-- <rect fill="#2a2a31" x="16.539" y="425.626" width="479.767" height="50.502" transform="matrix(1,0,0,1,0,0)"></rect> --}}
+				{{-- <path class="plane-take-off" d=" M 510.7 189.151 C 505.271 168.95 484.565 156.956 464.365 162.385 L 330.156 198.367 L 155.924 35.878 L 107.19 49.008 L 211.729 230.183 L 86.232 263.767 L 36.614 224.754 L 0 234.603 L 45.957 314.27 L 65.274 347.727 L 105.802 336.869 L 240.011 300.886 L 349.726 271.469 L 483.935 235.486 C 504.134 230.057 516.129 209.352 510.7 189.151 Z "></path> --}}
+				{{-- </svg>  --}} KINDLING
 			</a>
 		</div>
 
@@ -105,10 +106,10 @@
 
 	<div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
 		<!--Left Col-->
-		<div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-			<p class="uppercase tracking-loose w-full">What business are you?</p>
-			<h1 class="my-4 text-5xl font-bold leading-tight">Main Hero Message to sell yourself!</h1>
-			<p class="leading-normal text-2xl mb-8">Sub-hero message, not too long and not too short. Make it just right!</p>
+		<div class="flex flex-col w-full md:w-2/5 justify-center md:items-start text-center md:text-left">
+			{{-- <p class="uppercase tracking-loose w-full">What business are you?</p> --}}
+			<h1 class="my-4 text-5xl font-bold leading-tight">Kindling</h1>
+			<p class="leading-normal text-2xl mb-8">Rapid App Development</p>
 		
 			
 
@@ -117,7 +118,7 @@
 		</div>
 		<!--Right Col-->
 		<div class="w-full md:w-3/5 py-6 text-center">
-            @include('kindling::svg.hero')
+            @include('kindling::svg.hero3')
 		</div>
 		
 	</div>
@@ -459,10 +460,12 @@
 			
 				<a class="text-orange-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#"> 
 					<!--Icon from: http://www.potlabicons.com/ -->
-					<svg class="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005">
+					{{-- <svg class="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005">
 					<rect fill="#2a2a31" x="16.539" y="425.626" width="479.767" height="50.502" transform="matrix(1,0,0,1,0,0)"></rect>
 					<path class="plane-take-off" d=" M 510.7 189.151 C 505.271 168.95 484.565 156.956 464.365 162.385 L 330.156 198.367 L 155.924 35.878 L 107.19 49.008 L 211.729 230.183 L 86.232 263.767 L 36.614 224.754 L 0 234.603 L 45.957 314.27 L 65.274 347.727 L 105.802 336.869 L 240.011 300.886 L 349.726 271.469 L 483.935 235.486 C 504.134 230.057 516.129 209.352 510.7 189.151 Z "></path>
-					</svg> LANDING
+					</svg>  --}}
+					<img src="https://cdn3.iconfinder.com/data/icons/camping-icons/476/Camp_Fire-512.png" width="20px" class="inline -mt-2" />
+					Kindling
 					
 				</a>
 			</div>

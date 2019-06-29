@@ -1,6 +1,7 @@
 <?php
 
 return [
+    
     // 'dev' => [
     //     'providers' => [
     //         \Barryvdh\Debugbar\ServiceProvider::class,
